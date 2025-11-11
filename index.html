@@ -1,58 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>InstAlert - Versión 1</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstAlert</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container">
-      <h1><span class="brand-red">Inst</span>Alert</h1>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#quienes">Quiénes somos</a>
-        <a href="#funcionalidades">Funcionalidades</a>
-      </nav>
-    </div>
+    <div class="logo"><span class="red">Inst</span>Alert</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes">Quiénes somos</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <a href="#planes" class="btn">Obtener App</a>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container">
-      <h2>Tu app de confianza para la seguridad</h2>
-      <p>Promueve la prevención y la respuesta rápida ante emergencias.</p>
-      <img src="img/InstAlertApp.jpeg" alt="App InstAlert" />
+  <!-- INICIO -->
+  <section id="inicio" class="inicio">
+    <div class="text">
+      <h1><span class="red">Inst</span>Alert</h1>
+      <p>Tu app de confianza para tu seguridad. Buscamos ofrecer una herramienta accesible y confiable que promueva la prevención, respuesta rápida y mayor confianza al transitar por la ciudad.</p>
+      <a href="#planes" class="btn">Descarga el app</a>
+    </div>
+    <div class="img">
+      <img src="https://i.ibb.co/Sv1WSTb/personas.jpg" alt="Personas cruzando">
     </div>
   </section>
 
   <!-- QUIÉNES SOMOS -->
-  <section id="quienes">
-    <div class="container">
-      <h2>Quiénes somos</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Misión</h3>
-          <p>Brindar herramientas para prevenir delitos y fortalecer la seguridad comunitaria.</p>
-        </div>
-        <div class="card">
-          <h3>Visión</h3>
-          <p>Ser la plataforma de seguridad ciudadana más confiable de Latinoamérica.</p>
-        </div>
+  <section id="quienes" class="quienes">
+    <h2>Quiénes somos</h2>
+    <div class="mision-vision">
+      <div class="card">
+        <img src="https://i.ibb.co/5KLQHnG/policia.jpg" alt="Policías">
+        <h3>Misión</h3>
+        <p>Buscamos brindar a residentes y pequeños comerciantes de zonas de riesgo mejores herramientas que les permitan prevenir delitos, reaccionar rápidamente ante emergencias y fortalecer la seguridad de su comunidad.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/n8FKmgk/celular.jpg" alt="Celular en mano">
+        <h3>Visión</h3>
+        <p>Nos proyectamos en ser la plataforma de seguridad ciudadana más confiable de Latinoamérica, conectando comunidades y ofreciendo herramientas innovadoras que permitan a los ciudadanos protegerse y sentirse seguros.</p>
       </div>
     </div>
   </section>
 
-  <!-- FUNCIONALIDADES -->
-  <section id="funcionalidades">
-    <div class="container">
-      <h2>Botón de pánico</h2>
-      <p>Permite emitir una alarma sonora y enviar alertas a las autoridades.</p>
+  <!-- BOTÓN DE PÁNICO -->
+  <section id="funcionalidades" class="boton-panico">
+    <h2>Botón de pánico</h2>
+    <div class="contenido">
+      <img src="https://i.ibb.co/hWJ6b8x/boton-panico.png" alt="Botón de pánico">
+      <p>Nuestro servicio ofrece un sistema que permite emitir un sonido de alarma, además de alertas a autoridades mediante un botón de pánico vinculado a una aplicación.  
+      <br><br>También puede usarse para reportar o ver incidentes recientes, revisar mapas de calor y acceder a estadísticas en tiempo real.</p>
     </div>
   </section>
+
+  <!-- NOTIFICACIONES Y COMUNIDAD -->
+  <section class="info">
+    <div class="card">
+      <img src="https://i.ibb.co/f1VjwST/notificacion.png" alt="Notificaciones">
+      <h3>Notificaciones</h3>
+      <p>Se mostrarán diferentes acontecimientos alrededor, indicando con colores (verde, amarillo o rojo) la gravedad del suceso y el tiempo transcurrido desde el incidente.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/v1xd8Bn/comunidad.png" alt="Comunidad">
+      <h3>Comunidad</h3>
+      <p>Los usuarios pueden acceder a un foro donde publican o comentan incidentes, ayudando a registrar tendencias y fortalecer la seguridad colectiva.</p>
+    </div>
+  </section>
+
+  <!-- MAPA DE CALOR -->
+  <section class="mapa">
+    <h2>Mapa de calor</h2>
+    <div class="mapa-contenido">
+      <img src="https://i.ibb.co/0FkgW92/mapa-calor.png" alt="Mapa de calor">
+      <p>Los mapas de calor ayudan a determinar qué zonas tienen mayor riesgo, mostrando incidentes con fecha, hora y ubicación precisa.</p>
+    </div>
+  </section>
+
+  <!-- CONEXIONES Y REPORTES -->
+  <section class="info">
+    <div class="card">
+      <img src="https://i.ibb.co/6DLRB7R/policias.png" alt="Autoridades">
+      <h3>Conexiones con autoridades</h3>
+      <p>Las alertas llegan directamente a las autoridades más cercanas, facilitando la atención inmediata ante emergencias.</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/7NMLtwd/reportes.png" alt="Reportes">
+      <h3>Reportes</h3>
+      <p>Registra incidentes con hora, descripción y ubicación. La información alimenta los mapas de calor para tomar decisiones más seguras.</p>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="planes">
+    <h2>Escoge tu plan</h2>
+    <div class="plan-container">
+      <div class="plan">
+        <h3>Plan gratuito</h3>
+        <p class="precio">S/0</p>
+        <ul>
+          <li>Alertas básicas desde la app.</li>
+          <li>Recepción de avisos cercanos.</li>
+          <li>Consulta de incidentes recientes.</li>
+        </ul>
+        <a href="#" class="btn">Obtener</a>
+      </div>
+      <div class="plan destacado">
+        <h3>Plan personal</h3>
+        <p class="precio">S/19.99</p>
+        <ul>
+          <li>Todas las funciones del plan gratuito.</li>
+          <li>Alertas personalizadas y priorizadas.</li>
+          <li>Acceso completo al historial de incidentes.</li>
+        </ul>
+        <a href="#" class="btn">Obtener</a>
+      </div>
+      <div class="plan">
+        <h3>Plan familiar</h3>
+        <p class="precio">S/49.99</p>
+        <ul>
+          <li>Incluye todos los beneficios del plan personal.</li>
+          <li>Reportes compartidos y alertas grupales.</li>
+        </ul>
+        <a href="#" class="btn">Obtener</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Ingrese sus nombres" required>
+      <input type="text" placeholder="Ingrese sus apellidos" required>
+      <input type="email" placeholder="Ingrese su correo de contacto" required>
+      <input type="tel" placeholder="Ingrese su número de contacto" required>
+      <textarea placeholder="Ingrese su mensaje (opcional)"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 InstAlert | Tu app de confianza para la seguridad ciudadana</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

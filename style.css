@@ -1,50 +1,149 @@
-body {
-  font-family: Arial, sans-serif;
+/* General */
+* {
   margin: 0;
-  background: #fff;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
+body {
+  scroll-behavior: smooth;
 }
 
+/* Navbar */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #111;
-  color: #fff;
-  padding: 1rem;
+  color: white;
+  padding: 1rem 2rem;
 }
 
-.navbar a {
-  color: #fff;
-  margin: 0 10px;
+.logo { font-size: 1.5rem; font-weight: bold; }
+.red { color: #e60000; }
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar a { color: white; text-decoration: none; }
+.navbar a:hover { color: #e60000; }
+
+.btn {
+  background: #e60000;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
 }
+.btn:hover { background: #b00000; }
 
-.brand-red { color: #e60000; }
+/* Inicio */
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  background: white;
+}
+.inicio img { width: 400px; border-radius: 10px; }
 
-.hero {
-  background: #f2f2f2;
-  padding: 2rem;
+/* Quiénes somos */
+.quienes {
+  background: #f6f6f6;
+  padding: 4rem 5%;
   text-align: center;
 }
-
-.hero img {
-  width: 250px;
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
   border-radius: 10px;
-  margin-top: 1rem;
+  width: 300px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.grid-2 {
+/* Funcionalidades */
+.boton-panico, .info, .mapa {
+  background: #b6f3ec;
+  padding: 4rem 5%;
+  text-align: center;
+}
+.boton-panico .contenido, .info, .plan-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.boton-panico img, .info img, .mapa img {
+  width: 300px;
+  border-radius: 10px;
+}
+.mapa img { width: 500px; }
+
+/* Planes */
+.planes {
+  padding: 4rem 5%;
+  text-align: center;
+}
+.plan-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.plan {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 250px;
+  padding: 1.5rem;
+}
+.destacado {
+  background: #ffb3b3;
+}
+.plan .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Contacto */
+.contacto {
+  padding: 4rem 5%;
+  background: #f6f6f6;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
   gap: 1rem;
 }
+input, textarea {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
-.card {
-  background: #eee;
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
   padding: 1rem;
-  border-radius: 8px;
-  flex: 1;
 }

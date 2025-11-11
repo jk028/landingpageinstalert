@@ -3,54 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>InstAlert - Versión 1</title>
+  <title>InstAlert - Versión 2</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container">
-      <h1><span class="brand-red">Inst</span>Alert</h1>
-      <nav>
+    <div class="container nav-inner">
+      <div class="logo"><span class="brand-red">Inst</span>Alert</div>
+      <nav class="nav-menu">
         <a href="#inicio">Inicio</a>
         <a href="#quienes">Quiénes somos</a>
         <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#mapa">Mapa</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
+  <section id="inicio" class="hero fade-in">
     <div class="container">
-      <h2>Tu app de confianza para la seguridad</h2>
-      <p>Promueve la prevención y la respuesta rápida ante emergencias.</p>
-      <img src="img/InstAlertApp.jpeg" alt="App InstAlert" />
+      <h1>Tu app de confianza</h1>
+      <p>Prevención, respuesta rápida y seguridad al alcance de tu mano.</p>
+      <img src="img/InstAlertApp.jpeg" alt="App InstAlert">
     </div>
   </section>
 
-  <!-- QUIÉNES SOMOS -->
-  <section id="quienes">
-    <div class="container">
-      <h2>Quiénes somos</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Misión</h3>
-          <p>Brindar herramientas para prevenir delitos y fortalecer la seguridad comunitaria.</p>
-        </div>
-        <div class="card">
-          <h3>Visión</h3>
-          <p>Ser la plataforma de seguridad ciudadana más confiable de Latinoamérica.</p>
-        </div>
+  <section id="quienes" class="section fade-in">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Brindar herramientas accesibles para mejorar la seguridad comunitaria.</p>
+      </div>
+      <div class="card">
+        <h3>Visión</h3>
+        <p>Ser la plataforma más confiable de Latinoamérica.</p>
       </div>
     </div>
   </section>
 
-  <!-- FUNCIONALIDADES -->
-  <section id="funcionalidades">
+  <section id="funcionalidades" class="section teal fade-in">
     <div class="container">
       <h2>Botón de pánico</h2>
-      <p>Permite emitir una alarma sonora y enviar alertas a las autoridades.</p>
+      <p>Activa una alarma sonora y envía alertas en segundos.</p>
+    </div>
+  </section>
+
+  <section id="mapa" class="section fade-in">
+    <div class="container">
+      <h2>Mapa de calor</h2>
+      <p>Visualiza las zonas con mayor incidencia de reportes.</p>
+      <img src="img/mapa-ejemplo.png" alt="Mapa de calor">
     </div>
   </section>
 
